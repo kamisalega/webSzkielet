@@ -22,16 +22,4 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
-src/main/resources/static/
-src/main/resources/templates/
-src/main/java/pl/salega/webszkielet/backend/
-src/main/java/pl/salega/webszkielet/config/
-src/main/java/pl/salega/webszkielet/enums/
-src/main/java/pl/salega/webszkielet/exceptions/
-src/main/java/pl/salega/webszkielet/utils/
-src/main/java/pl/salega/webszkielet/web/controllers/advices/
-src/main/java/pl/salega/webszkielet/web/domain/
-src/main/java/pl/salega/webszkielet/web/i18n/
-src/main/resources/i18n/
-src/main/resources/sql/
-src/main/resources/uml/
+
