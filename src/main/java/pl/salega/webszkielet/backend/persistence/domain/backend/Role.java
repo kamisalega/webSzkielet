@@ -1,5 +1,7 @@
 package pl.salega.webszkielet.backend.persistence.domain.backend;
 
+import pl.salega.webszkielet.enums.RolesEnum;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
@@ -23,6 +25,17 @@ public class Role implements Serializable {
 
     public Role() {
 
+    }
+
+
+    /**
+     * Pełny konstruktor
+     * @param rolesEnum
+     */
+
+    public Role(RolesEnum rolesEnum) {
+        this.id = rolesEnum.getId();
+        this.name = rolesEnum.getRoleName();
     }
 
     public int getId() {

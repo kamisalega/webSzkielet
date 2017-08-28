@@ -1,5 +1,7 @@
 package pl.salega.webszkielet.backend.persistence.domain.backend;
 
+import pl.salega.webszkielet.enums.PlansEnum;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.io.Serializable;
@@ -25,6 +27,14 @@ public class Plan implements Serializable {
 
     }
 
+    /**
+     * Pełny konstruktor.
+     * @param plansEnum
+     */
+    public Plan(PlansEnum plansEnum) {
+        this.id = plansEnum.getId();
+        this.name = plansEnum.getPlanName();
+    }
 
     public int getId() {
         return id;
@@ -41,7 +51,6 @@ public class Plan implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
-
 
 
     @Override
